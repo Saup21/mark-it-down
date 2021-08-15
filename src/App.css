@@ -12,9 +12,32 @@ body {
   margin-bottom: 27px;
 }
 
+.area {
+  display: flex;
+  flex-direction: row;
+}
+
 .editor{
   padding: 10px 10px 10px 10px;
-  background-color: #3b3b3b;
+  background-color:rgb(12, 12, 29);
   width: 50%;
   height: 88vh;
+}
+
+
+.preview {
+  padding: 10px 10px 10px 30px;
+  color: aliceblue;
+  border: 10px solid rgb(12, 12, 29);
+  width: 50%;
+  height: 88vh;
+  overflow: auto;
+}
+
+.header-text {
+  font-family: 'Itim', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 1px solid aliceblue;
+  margin-bottom: 10px;
 }
