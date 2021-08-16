@@ -6,6 +6,25 @@ body {
   margin: 0%;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(112, 112, 112); 
+}
+
 .text-center {
   color: white;
   font-family: 'Itim', sans-serif;

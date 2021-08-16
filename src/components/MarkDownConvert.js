@@ -1,9 +1,27 @@
 import React, { useState, useEffect } from 'react'
 import MonacoEditor from '@monaco-editor/react'
 import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 
 function MarkDownConvert() {
-    const [mark, setMark] = useState('')
+    const [mark, setMark] = useState(`# h1
+## h2
+### h3 
+#### h4
+##### h5
+###### h6
+***
+1. Ordered list 
+1. Ordered list 
+
+- Unordered list
+- Unordered list
+***
+
+- [x] Enjoy *markdown* here 
+
+***
+[Developed with Love by Sauparna Gupta](https://github.com/Saup21/mark-it-down)`)
 
     useEffect(() => {
         if (sessionStorage.getItem('code')) {
@@ -15,7 +33,6 @@ function MarkDownConvert() {
 
     useEffect(() => {
         sessionStorage.setItem('code', mark)
-        console.log('storing');
     }, [mark])
 
 
@@ -39,8 +56,8 @@ function MarkDownConvert() {
                 />
             </div>
             <div className="preview">
-                <div className="header-text">Your Preview appears here</div>
-                <ReactMarkdown>
+                <div className="header-text">Your Preview Appears Here</div>
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>
                     {mark}
                 </ReactMarkdown>
             </div>
