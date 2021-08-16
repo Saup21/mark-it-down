@@ -21,7 +21,7 @@ function MarkDownConvert() {
 - [x] Enjoy *markdown* here 
 
 ***
-[Developed with Love by Sauparna Gupta](https://github.com/Saup21/mark-it-down)`)
+Developed with Love by [Sauparna Gupta](https://github.com/Saup21/mark-it-down)`)
 
     useEffect(() => {
         if (sessionStorage.getItem('code')) {

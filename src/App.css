@@ -60,3 +60,19 @@ body {
   border-bottom: 1px solid aliceblue;
   margin-bottom: 10px;
 }
+
+@media screen and (max-width: 780px) {
+  .area {
+    flex-direction: column;
+  }
+
+  .editor {
+    width: 100%;
+    height: 45vh;
+  }
+
+  .preview {
+    width: 100%;
+    height: 45vh;
+  }
+}
