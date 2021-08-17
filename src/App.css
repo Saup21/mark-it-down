@@ -25,10 +25,35 @@ body {
   background: rgb(112, 112, 112); 
 }
 
-.text-center {
+.header {
+  list-style: none;
+  padding-left: 0%;
+  margin-bottom: 0%;
+  margin: 10px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.text-left {
   color: aliceblue;
   font-family: 'Itim', sans-serif;
-  margin-bottom: 27px;
+}
+
+.btn-info {
+  background-color: rgb(50, 50, 128) !important;
+  border: 1px solid rgb(50, 50, 128) !important;
+  color: aliceblue !important;
+}
+
+.btn-info:hover {
+  background-color: rgb(34, 34, 88) !important;
+  border: 1px solid rgb(34, 34, 88) !important;
 }
 
 .area {
